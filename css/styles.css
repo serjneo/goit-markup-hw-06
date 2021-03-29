@@ -519,6 +519,7 @@ img {
   background-color: var(--footer-color);
   margin-right: 12px;
   padding-left: 16px;
+  color: var(--adress-color);
 }
 .footer-form-input::placeholder {
   font-size: 16px;
@@ -679,6 +680,11 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-btn-close:hover,
+.modal-btn-close:focus {
+  fill: var(--accent-color);
 }
 .is-hidden {
   opacity: 0;
@@ -742,7 +748,6 @@ img {
   resize: none;
   margin-top: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 20px;
 }
 .modal-form-message::placeholder {
   font-size: 12px;
@@ -782,6 +787,8 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--description-color);
+  margin-top: 20px;
+  text-align: center;
 }
 .modal-form-btn {
   align-self: center;
